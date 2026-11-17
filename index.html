@@ -1,522 +1,703 @@
 <!doctype html>
-<html lang="pt-PT" class="no-js">
+<html lang="pt-PT">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- PRÉVIA: não indexar (surpresa, não publicada) -->
-  <meta name="robots" content="noindex, nofollow">
-
-  <title>Cris Assis Tattoo · Tatuadora em Lisboa</title>
-  <meta name="description" content="Cris Assis, tatuadora brasileira em Lisboa: tradicional, neo-tradicional, blackwork e flash autoral. Marcações pela DM do Instagram.">
-  <link rel="canonical" href="https://decoder300.github.io/cris-assis-tattoo/">
-
-  <!-- Open Graph / social -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Cris Assis — Tatuadora em Lisboa">
-  <meta property="og:description" content="Tradicional, neo-tradicional e blackwork. Flash autoral. Agenda aberta — DM no Instagram.">
-  <meta property="og:locale" content="pt_PT">
-  <meta property="og:url" content="https://decoder300.github.io/cris-assis-tattoo/">
-  <meta property="og:image" content="https://decoder300.github.io/cris-assis-tattoo/assets/og.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-
-  <!-- Fontes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,900;1,900&family=Inter:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
-
-  <!-- Design system -->
-  <link rel="stylesheet" href="design-system/tokens.css">
-  <link rel="stylesheet" href="design-system/componentes.css">
-
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TattooParlor",
-    "name": "Cris Assis Tattoo",
-    "description": "Tatuadora brasileira em Lisboa — tradicional, neo-tradicional, blackwork e flash autoral.",
-    "image": "https://decoder300.github.io/cris-assis-tattoo/assets/og.jpg",
-    "url": "https://decoder300.github.io/cris-assis-tattoo/",
-    "areaServed": "Lisboa, Portugal",
-    "sameAs": ["https://www.instagram.com/crisassistattoo/"],
-    "address": { "@type": "PostalAddress", "addressLocality": "Lisboa", "addressCountry": "PT" }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Cris Assis · Tatuagem tradicional em Lisboa</title>
+<meta name="description" content="Cris Assis, tatuadora em Lisboa. Tradicional, neo-tradicional e blackwork. Marcações pela DM do Instagram.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cris Assis · Tatuagem tradicional em Lisboa">
+<meta property="og:description" content="Tradicional, neo-tradicional e blackwork. Marcações pela DM do Instagram.">
+<meta property="og:image" content="https://decoder300.github.io/cris-assis-tattoo/img/og.jpg">
+<meta property="og:url" content="https://decoder300.github.io/cris-assis-tattoo/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 88 C20 66 6 48 10 30 C14 14 34 10 50 28 C66 10 86 14 90 30 C94 48 80 66 50 88 Z' fill='%23D7322A' stroke='%231B1512' stroke-width='6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Special+Elite&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* tiradas dos flashes dela */
+    --papel:#E7D4AC;
+    --papel-claro:#F3E6C8;
+    --tinta:#1B1512;
+    --vermelho:#D7322A;
+    --vermelho-esc:#9f231d;
+    --mostarda:#D9A23B;
+    --verde:#3C857F;
+    --gutter:clamp(18px,4vw,56px);
   }
-  </script>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{overflow-x:clip}
+  body{
+    font-family:"Work Sans",system-ui,sans-serif;
+    color:var(--tinta);
+    background:
+      radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(120,80,30,.22) 100%),
+      radial-gradient(40% 30% at 85% 15%, rgba(150,100,40,.10), transparent 70%),
+      radial-gradient(35% 25% at 10% 80%, rgba(150,100,40,.10), transparent 70%),
+      var(--papel);
+    background-attachment:fixed;
+    min-height:100vh;
+    overflow-x:clip;
+  }
+  /* grão de papel */
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.28;transform:translateZ(0);will-change:transform;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .12 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  img{max-width:100%}
+  a{color:inherit}
+  .mono{font-family:"Special Elite",ui-monospace,monospace;letter-spacing:.06em}
 
-  <script>document.documentElement.classList.remove('no-js');</script>
-<link rel="stylesheet" href="secoes/hero.css">
-<link rel="stylesheet" href="secoes/microinfo.css">
-<link rel="stylesheet" href="secoes/galeria.css">
-<link rel="stylesheet" href="secoes/processo.css">
-<link rel="stylesheet" href="secoes/estilos.css">
-<link rel="stylesheet" href="secoes/sobre.css">
-<link rel="stylesheet" href="secoes/estudio.css">
-<link rel="stylesheet" href="secoes/agendar.css">
+  /* letreiro de adesivo, usado nos títulos */
+  .adesivo{
+    font-family:"Alfa Slab One",serif;font-weight:400;line-height:.88;letter-spacing:-.01em;
+    color:var(--papel-claro);
+    -webkit-text-stroke:clamp(2px,.3vw,4px) var(--tinta);
+    paint-order:stroke fill;
+    text-shadow:clamp(4px,.55vw,8px) clamp(4px,.55vw,8px) 0 var(--vermelho);
+  }
+  h2.adesivo{font-size:clamp(64px,9vw,140px)}
+
+  /* faixa xadrez de skate entre seções */
+  .xadrez{
+    height:26px;border-block:3px solid var(--tinta);
+    background:repeating-conic-gradient(var(--tinta) 0 25%, var(--papel-claro) 0 50%) 0 0/26px 26px;
+  }
+
+  /* ---------- cabeçalho ---------- */
+  header{
+    position:relative;z-index:5;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:22px var(--gutter);
+    border-bottom:2px dashed rgba(27,21,18,.35);
+  }
+  .marca{font-family:"Alfa Slab One",serif;font-size:20px;letter-spacing:.02em;text-decoration:none;color:var(--tinta)}
+  .marca span{color:var(--vermelho)}
+  nav{display:flex;gap:28px;align-items:center}
+  nav a{color:var(--tinta);text-decoration:none;font-size:15px}
+  nav a:not(.btn):hover{text-decoration:underline;text-decoration-color:var(--vermelho);text-underline-offset:4px}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:"Alfa Slab One",serif;font-size:17px;letter-spacing:.03em;text-decoration:none;
+    color:var(--papel-claro);background:var(--vermelho);
+    border:3px solid var(--tinta);border-radius:10px;
+    padding:14px 22px;box-shadow:6px 6px 0 var(--tinta);cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:hover{transform:translate(3px,3px);box-shadow:3px 3px 0 var(--tinta)}
+  .btn:active{transform:translate(6px,6px);box-shadow:0 0 0 var(--tinta)}
+  .btn.peq{font-size:14px;padding:10px 16px;box-shadow:4px 4px 0 var(--tinta)}
+  .btn.claro{background:var(--papel-claro);color:var(--tinta)}
+  .btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--mostarda);outline-offset:3px}
+
+  /* ---------- topo ---------- */
+  .topo{
+    position:relative;
+    display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,64px);align-items:center;
+    padding:clamp(28px,5vw,72px) var(--gutter) clamp(40px,6vw,90px);
+    max-width:1440px;margin:0 auto;
+  }
+  .sobrenome{font-size:15px;color:#4a3e33;margin-bottom:14px}
+  h1{font-size:clamp(84px,11vw,176px);line-height:.86}
+  h1 .l{display:inline-block}
+  .faixa{display:block;width:min(560px,100%);height:auto;margin:22px 0 22px -6px;overflow:visible}
+  .faixa .contorno{fill:none;stroke:var(--tinta);stroke-width:3;stroke-linejoin:round}
+  .faixa .corpo{fill:var(--vermelho)}
+  .faixa .dobra{fill:var(--vermelho-esc)}
+  .faixa text{font-family:"Alfa Slab One",serif;fill:var(--papel-claro);font-size:30px;letter-spacing:3px}
+  .linha{font-size:clamp(17px,1.5vw,21px);line-height:1.55;max-width:30ch;margin-bottom:30px}
+  .acoes{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
+  .ig{color:var(--tinta);font-size:15px}
+  .ig b{color:var(--vermelho);font-weight:400}
+
+  .mural-topo{position:relative;min-height:clamp(420px,46vw,640px)}
+  .folha{
+    position:absolute;right:0;top:4%;width:92%;
+    transform:rotate(-3deg);
+    box-shadow:0 18px 40px rgba(60,35,10,.35), 0 2px 0 rgba(0,0,0,.05);
+  }
+  .folha img{display:block;width:100%;height:auto;border:10px solid var(--papel-claro)}
+  .fita{
+    position:absolute;width:120px;height:34px;z-index:2;
+    background:rgba(243,230,200,.72);
+    box-shadow:0 1px 2px rgba(0,0,0,.12);
+  }
+  .fita.a{top:-14px;left:8%;transform:rotate(-8deg)}
+  .fita.b{top:-12px;right:6%;transform:rotate(6deg)}
+  .polaroide{
+    position:absolute;left:-4%;bottom:-4%;width:38%;z-index:2;
+    background:#FBF5E6;padding:12px 12px 46px;
+    transform:rotate(5deg);
+    box-shadow:0 16px 34px rgba(60,35,10,.4);
+  }
+  .polaroide img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+  .polaroide figcaption{position:absolute;left:0;right:0;bottom:12px;text-align:center;font-size:15px;color:#3b3029}
+  .carimbo{
+    position:absolute;right:-1%;bottom:2%;width:clamp(120px,13vw,170px);aspect-ratio:1;z-index:3;
+    color:var(--vermelho);
+  }
+  .carimbo .gira{width:100%;height:100%;animation:gira 22s linear infinite}
+  .carimbo .centro{position:absolute;inset:0;display:grid;place-items:center}
+  @keyframes gira{to{transform:rotate(360deg)}}
+
+  /* faixa corrida */
+  .corrida{
+    position:relative;z-index:4;background:var(--tinta);color:var(--papel-claro);
+    overflow:hidden;transform:rotate(-1.2deg);margin:0 -10px;
+  }
+  .corrida .trilho{display:flex;width:max-content;animation:corre 26s linear infinite}
+  .corrida span{font-family:"Alfa Slab One",serif;font-size:clamp(22px,2.6vw,34px);letter-spacing:.04em;padding:16px 0;white-space:nowrap}
+  .corrida i{font-style:normal;color:var(--mostarda);margin:0 .7em}
+  @keyframes corre{to{transform:translateX(-50%)}}
+
+  /* ---------- na pele (mural de polaroides) ---------- */
+  .pele{max-width:1440px;margin:0 auto;padding:clamp(80px,10vw,150px) var(--gutter) clamp(70px,9vw,130px)}
+  .pele-cab{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:clamp(40px,6vw,80px)}
+  .bilhete{
+    max-width:300px;background:var(--papel-claro);padding:18px 20px 20px;font-size:16px;line-height:1.5;
+    transform:rotate(2.5deg);box-shadow:0 10px 24px rgba(60,35,10,.25);position:relative;
+  }
+  .bilhete::before{content:"";position:absolute;top:-12px;left:50%;width:90px;height:26px;margin-left:-45px;background:rgba(215,50,42,.55);transform:rotate(-4deg)}
+  .bilhete a{color:var(--vermelho)}
+
+  .parede{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(30px,3vw,48px) clamp(18px,2.2vw,34px);align-items:start}
+  .foto{
+    position:relative;background:#FBF5E6;padding:10px 10px 44px;
+    rotate:var(--r,0deg);
+    box-shadow:0 14px 30px rgba(60,35,10,.33);
+    cursor:zoom-in;border:0;text-align:left;font:inherit;color:inherit;display:block;width:100%;
+    transition:box-shadow .25s ease, scale .25s ease;
+  }
+  .foto:hover{scale:1.025;box-shadow:0 22px 44px rgba(60,35,10,.4);z-index:3}
+  .foto img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+  .foto .leg{position:absolute;left:12px;right:12px;bottom:13px;font-size:15px;color:#3b3029}
+  .foto .fita{width:96px;height:28px;top:-13px;left:50%;margin-left:-48px;transform:rotate(var(--f,-4deg))}
+  .p1{grid-column:1/5;--r:-3deg}
+  .p2{grid-column:5/8;--r:2.5deg;margin-top:70px;--f:5deg}
+  .p3{grid-column:8/13;--r:-1.5deg;margin-top:14px}
+  .p4{grid-column:1/4;--r:3deg;margin-top:10px;--f:6deg}
+  .p5{grid-column:4/9;--r:-2deg;margin-top:-30px}
+  .p6{grid-column:9/12;--r:2deg;margin-top:40px;--f:-7deg}
+  .p7{grid-column:2/6;--r:1.5deg;margin-top:-10px}
+  .p8{grid-column:6/9;--r:-3deg;margin-top:30px;--f:4deg}
+  .mais{
+    grid-column:9/13;margin-top:60px;rotate:-4deg;
+    background:var(--mostarda);border:3px solid var(--tinta);border-radius:14px;box-shadow:7px 7px 0 var(--tinta);
+    padding:28px 26px;text-decoration:none;display:block;
+  }
+  .mais strong{display:block;font-family:"Alfa Slab One",serif;font-weight:400;font-size:clamp(26px,2.4vw,36px);line-height:1;margin-bottom:10px}
+  .mais span{font-size:16px}
+  .mais:hover{rotate:-2deg}
+
+  /* ---------- flash (corre na horizontal) ---------- */
+  .flash{position:relative;background:var(--papel-claro);overflow:hidden}
+  .flash-trilho{display:flex;align-items:center;gap:clamp(40px,5vw,90px);width:max-content;padding:0 var(--gutter)}
+  .flash-intro{width:min(440px,34vw);flex:none}
+  .flash-intro-cel{display:none}
+  .flash-intro p{font-size:clamp(17px,1.4vw,20px);line-height:1.55;margin:22px 0 28px;max-width:28ch}
+  .ff{position:relative;flex:none;rotate:var(--r,0deg)}
+  .ff img{display:block;height:min(64vh,620px);width:auto;border:10px solid #FBF5E6;box-shadow:0 18px 40px rgba(60,35,10,.32)}
+  .ff .fita{top:-14px}
+  .ff:nth-child(2){--r:-2deg}.ff:nth-child(3){--r:1.5deg;margin-top:60px}.ff:nth-child(4){--r:-1deg}
+  .ff:nth-child(5){--r:2.5deg;margin-top:40px}.ff:nth-child(6){--r:-2deg}
+  @media (min-width:861px){
+    .flash{height:100vh}
+    .flash-janela,.flash-trilho{height:100%}
+  }
+
+  /* ---------- como marcar ---------- */
+  .marcar{max-width:1320px;margin:0 auto;padding:clamp(80px,10vw,150px) var(--gutter)}
+  .marcar h2{margin-bottom:clamp(40px,6vw,80px)}
+  .passos{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));row-gap:28px}
+  .caminho{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+  .caminho path{fill:none;stroke:var(--vermelho);stroke-width:4;stroke-linecap:round;vector-effect:non-scaling-stroke}
+  .passo{
+    position:relative;background:var(--papel-claro);border:3px solid var(--tinta);border-radius:12px;
+    box-shadow:7px 7px 0 var(--tinta);padding:26px 26px 28px;
+  }
+  .passo:nth-of-type(1){grid-column:1/6;rotate:-1.5deg}
+  .passo:nth-of-type(2){grid-column:5/10;grid-row:2;rotate:1.5deg;margin-left:30px}
+  .passo:nth-of-type(3){grid-column:8/13;grid-row:3;rotate:-1deg;margin-left:40px}
+  .passo .ic{width:58px;height:58px;border-radius:50%;background:var(--vermelho);border:3px solid var(--tinta);display:grid;place-items:center;margin-bottom:16px}
+  .passo .ic svg{width:30px;height:30px}
+  .passo h3{font-family:"Alfa Slab One",serif;font-weight:400;font-size:clamp(24px,2.2vw,32px);line-height:1.05;margin-bottom:10px}
+  .passo p{font-size:17px;line-height:1.5}
+
+  /* talão que monta a mensagem */
+  .talao{
+    margin:clamp(70px,9vw,120px) auto 0;max-width:720px;position:relative;
+    background:#FBF5E6;padding:44px clamp(22px,4vw,48px) 40px;
+    box-shadow:0 18px 40px rgba(60,35,10,.3);rotate:-.6deg;
+    -webkit-mask:radial-gradient(circle 9px at 50% 0,#0000 98%,#000) 0 0/26px 100% repeat-x;
+            mask:radial-gradient(circle 9px at 50% 0,#0000 98%,#000) 0 0/26px 100% repeat-x;
+  }
+  .talao h3{font-family:"Alfa Slab One",serif;font-weight:400;font-size:clamp(28px,3vw,40px);margin-bottom:6px}
+  .talao .sub{font-size:16px;margin-bottom:26px;color:#4a3e33}
+  .campo{margin-bottom:20px}
+  .campo label{display:block;font-size:14px;margin-bottom:6px;color:#4a3e33}
+  .campo input,.campo textarea,.campo select{
+    width:100%;font:inherit;font-size:17px;color:var(--tinta);background:transparent;
+    border:0;border-bottom:2px dashed rgba(27,21,18,.5);padding:8px 2px;border-radius:0;
+  }
+  .campo textarea{min-height:84px;resize:vertical;border:2px dashed rgba(27,21,18,.5);padding:10px;border-radius:6px}
+  .duas{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+  .talao .btn{margin-top:10px}
+  .aviso{margin-top:16px;font-size:15px;min-height:1.4em;color:var(--verde)}
+
+  /* ---------- sobre ---------- */
+  .sobre{max-width:1240px;margin:0 auto;padding:clamp(70px,9vw,140px) var(--gutter);display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:clamp(40px,6vw,100px);align-items:center}
+  .retrato{position:relative;background:#FBF5E6;padding:14px 14px 56px;rotate:-3deg;box-shadow:0 18px 40px rgba(60,35,10,.35)}
+  .retrato img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;filter:contrast(1.05)}
+  .retrato figcaption{position:absolute;left:0;right:0;bottom:16px;text-align:center;font-size:16px}
+  .retrato .fita{top:-14px;left:20px;transform:rotate(-10deg)}
+  .retrato .fita.b{left:auto;right:20px;transform:rotate(8deg)}
+  .sobre h2{margin-bottom:28px}
+  .sobre p{font-size:clamp(18px,1.5vw,21px);line-height:1.6;max-width:36ch;margin-bottom:18px}
+  .estilos{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .estilos span{border:2px solid var(--tinta);border-radius:999px;padding:6px 14px;font-size:14px;background:var(--papel-claro)}
+
+  /* ---------- final ---------- */
+  .final{background:var(--vermelho);color:var(--papel-claro);text-align:center;padding:clamp(80px,11vw,160px) var(--gutter) clamp(60px,8vw,110px);position:relative;overflow:hidden}
+  .final h2{font-size:clamp(66px,12vw,200px);text-shadow:clamp(4px,.6vw,9px) clamp(4px,.6vw,9px) 0 var(--tinta)}
+  .final p{font-size:clamp(18px,1.6vw,22px);margin:26px auto 36px;max-width:34ch;line-height:1.5}
+  .final .ig2{display:block;margin-top:26px;font-size:16px}
+  .rodape{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px var(--gutter);font-size:14px;background:var(--tinta);color:var(--papel-claro)}
+  .rodape a{color:var(--mostarda)}
+
+  /* botão fixo da DM */
+  .dm-fixo{
+    position:fixed;right:18px;bottom:18px;z-index:50;
+    width:74px;height:74px;border-radius:50%;display:grid;place-items:center;text-decoration:none;
+    font-family:"Alfa Slab One",serif;font-size:20px;color:var(--papel-claro);background:var(--vermelho);
+    border:3px solid var(--tinta);box-shadow:4px 4px 0 var(--tinta);
+    transform:translateY(140%) rotate(-12deg);transition:transform .35s cubic-bezier(.3,1.6,.5,1);
+  }
+  .dm-fixo.on{transform:translateY(0) rotate(-12deg)}
+
+  /* lightbox */
+  .caixa{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;margin:0}
+  .caixa::backdrop{background:rgba(27,21,18,.88)}
+  .caixa[open]{display:grid;place-items:center}
+  .caixa figure{position:relative;background:#FBF5E6;padding:12px 12px 52px;max-width:min(92vw,720px)}
+  .caixa img{display:block;max-height:78vh;max-width:100%;width:auto;height:auto;margin:0 auto}
+  .caixa figcaption{position:absolute;left:0;right:0;bottom:16px;text-align:center;font-size:16px}
+  .caixa button{position:fixed;font-family:"Alfa Slab One",serif;font-size:22px;width:56px;height:56px;border-radius:50%;border:3px solid var(--tinta);background:var(--papel-claro);color:var(--tinta);box-shadow:4px 4px 0 var(--tinta);cursor:pointer}
+  .caixa .fechar{top:18px;right:18px}
+  .caixa .ant{left:18px;top:50%;margin-top:-28px}
+  .caixa .prox{right:18px;top:50%;margin-top:-28px}
+
+  /* ---------- celular ---------- */
+  @media (max-width:860px){
+    nav a:not(.btn){display:none}
+    header{padding:16px var(--gutter)}
+    .marca{font-size:17px;white-space:nowrap}
+    .btn{white-space:nowrap}
+    .btn.peq{font-size:12px;padding:9px 12px}
+    .talao .btn{font-size:15px;width:100%;justify-content:center;padding:14px 12px}
+    .topo{grid-template-columns:1fr;gap:34px;padding-top:26px}
+    h1{font-size:clamp(78px,24vw,132px)}
+    .faixa{margin:18px 0}
+    .mural-topo{min-height:auto;aspect-ratio:1/1.05}
+    .folha{width:96%;right:-2%}
+    .polaroide{width:48%;left:0}
+    .carimbo{width:104px;right:0;bottom:2%}
+
+    .parede{grid-template-columns:1fr 1fr;gap:34px 16px}
+    .parede > *{grid-column:auto !important;grid-row:auto !important;margin-top:0 !important}
+    .parede > :nth-child(even){translate:0 36px}
+    .mais{grid-column:1/-1 !important;translate:none !important;margin-top:40px !important}
+    .foto{padding:7px 7px 34px}
+    .foto .leg{font-size:13px;bottom:9px;left:9px}
+
+    .flash{padding:70px 0 60px}
+    .flash-janela{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:20px 0 30px}
+    .flash-janela::-webkit-scrollbar{display:none}
+    .flash-trilho{gap:26px}
+    .flash-trilho .flash-intro{display:none}
+    .flash-intro-cel{display:block;width:auto;padding:0 var(--gutter)}
+    .ff{scroll-snap-align:center;margin-top:0 !important}
+    .ff:nth-child(2){margin-left:4vw}
+    .ff img{height:auto;width:82vw}
+
+    .passos{grid-template-columns:1fr;row-gap:30px}
+    .passo{grid-column:1 !important;grid-row:auto !important;margin-left:0 !important}
+    .caminho{display:none}
+    .duas{grid-template-columns:1fr}
+
+    .sobre{grid-template-columns:1fr}
+    .retrato{max-width:420px}
+    .dm-fixo{width:66px;height:66px;font-size:18px;right:14px;bottom:14px}
+    .caixa .ant,.caixa .prox{top:auto;bottom:18px;margin-top:0}
+  }
+  .estatico .flash{height:auto !important;padding:70px 0}
+  .estatico .flash-janela{overflow-x:auto}
+  @media (prefers-reduced-motion:reduce){
+    .carimbo .gira,.corrida .trilho{animation:none}
+    .flash-janela{overflow-x:auto}
+    .flash{height:auto !important;padding:70px 0}
+  }
+</style>
 </head>
 <body>
 
-  <!-- ===== Traço que escreve: camada SVG global (fica atrás do conteúdo) ===== -->
-  <svg class="cena-traco" aria-hidden="true" width="0" height="0" style="position:absolute"></svg>
+<header>
+  <a class="marca" href="#">CRIS <span>✦</span> ASSIS</a>
+  <nav class="mono">
+    <a href="#trabalhos">trabalhos</a>
+    <a href="#flash">flash</a>
+    <a href="#marcar">marcar</a>
+    <a href="#sobre">sobre</a>
+    <a class="btn peq" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener">MARCAR PELA DM</a>
+  </nav>
+</header>
 
-  <!-- ===== CABEÇALHO ===== -->
-  <header class="cabecalho">
-    <a class="cabecalho__marca" href="#hero" aria-label="Cris Assis — início">Cris Assis</a>
-    <nav class="nav" aria-label="Navegação principal">
-      <div class="nav__links" style="display:flex; gap:clamp(14px,2vw,30px);">
-        <a href="#galeria">Trabalhos</a>
-        <a href="#estilos">Estilos</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#estudio">Estúdio</a>
-      </div>
-      <a class="btn btn--primario" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener">Marcar no Instagram</a>
-      <details class="menu-mob">
-        <summary aria-label="Abrir menu">Menu</summary>
-        <div class="menu-mob__painel">
-          <a href="#galeria">Trabalhos</a>
-          <a href="#processo">Do papel à pele</a>
-          <a href="#estilos">Estilos</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#estudio">Estúdio</a>
-          <a href="#agendar">Marcar</a>
-        </div>
-      </details>
-    </nav>
-  </header>
+<main>
+  <section class="topo">
+    <div class="texto">
+      <p class="sobrenome mono">LISBOA · TATUAGEM TRADICIONAL</p>
+      <h1 class="adesivo" aria-label="Cris Assis"><span class="palavra">CRIS</span><br><span class="palavra">ASSIS</span></h1>
 
-  <main>
-    <!-- secao:hero -->
-<section id="hero" class="secao hero" aria-label="Cris Assis — tatuadora em Lisboa">
-  <div class="container hero__grid">
-
-    <!-- Coluna do nome -->
-    <div class="hero__texto">
-      <h1 class="hero__nome display" aria-label="Cris Assis">
-        <span class="hero__linha" data-linha="1"><span class="hero__palavra">Cris</span></span>
-        <span class="hero__linha" data-linha="2"><span class="hero__palavra">Assis</span></span>
-        <!-- agulha: a linha que escreve, com ponto de tinta na ponta -->
-        <span class="hero__agulha" aria-hidden="true"><span class="hero__tinta"></span></span>
-      </h1>
-
-      <p class="hero__sub display">Tatuadora · Lisboa</p>
-
-      <p class="lead hero__lead">Tradicional, neo-tradicional e blackwork. Linha preta firme e cor que dura — desenho pensado para a tua pele.</p>
-
-      <svg class="hero__floreio" viewBox="0 0 300 40" aria-hidden="true" focusable="false">
-        <path d="M4,22 C50,6 90,6 120,22 C140,33 160,33 180,22 C210,6 250,6 296,22 M296,22 C288,16 288,28 296,22" />
+      <svg class="faixa" viewBox="0 0 560 96" aria-hidden="true">
+        <path class="dobra" d="M30 30 L0 22 L14 48 L0 74 L44 66 Z"/>
+        <path class="dobra" d="M530 30 L560 22 L546 48 L560 74 L516 66 Z"/>
+        <path class="contorno" d="M30 30 L0 22 L14 48 L0 74 L44 66"/>
+        <path class="contorno" d="M530 30 L560 22 L546 48 L560 74 L516 66"/>
+        <path class="corpo" d="M30 14 Q280 0 530 14 L530 70 Q280 56 30 70 Z"/>
+        <path class="contorno" d="M30 14 Q280 0 530 14 L530 70 Q280 56 30 70 Z"/>
+        <text x="280" y="52" text-anchor="middle">TATTOO · LISBOA</text>
       </svg>
 
-      <div class="hero__acoes">
-        <a class="btn btn--primario btn--bloco-mob" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener">Marcar no Instagram</a>
-        <a class="link-linha hero__link" href="#galeria">Ver os trabalhos</a>
+      <p class="linha">Tradicional, neo-tradicional e blackwork. Linha preta firme e cor que aguenta os anos.</p>
+      <div class="acoes">
+        <a class="btn" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener">MARCAR PELA DM →</a>
+        <a class="ig mono" href="https://www.instagram.com/crisassistattoo/" target="_blank" rel="noopener">ver o trabalho em <b>@crisassistattoo</b></a>
       </div>
     </div>
 
-    <!-- Coluna da foto -->
-    <figure class="foto foto--cor hero__foto">
-      <img src="assets/galeria/work/hero.jpg" width="900" height="1200" fetchpriority="high"
-           alt="Gueixa neo-tradicional a cores, da Cris Assis">
-    </figure>
-
-  </div>
-
-  <!-- Microinfo nos cantos -->
-  <p class="micro hero__canto hero__canto--esq">Lisboa, Portugal</p>
-  <a class="micro hero__canto hero__canto--dir" href="https://www.instagram.com/crisassistattoo/" target="_blank" rel="noopener">@crisassistattoo</a>
-</section>
-<!-- /secao:hero -->
-    <!-- secao:microinfo -->
-<!-- ============================================================
-     Seção: microinfo  (agente: Fita)
-     Fundo --cor-tinta · faixa fina · sem foto.
-     Usa só tokens/classes do DS + microinfo.css (escopo .microinfo).
-     Movimento registrado em secoes/microinfo.js (window.cenas).
-     ============================================================ -->
-<section id="microinfo" class="secao microinfo" aria-label="Disponibilidade e contacto">
-  <div class="container microinfo__container">
-    <ul class="microinfo__faixa aparece" role="list">
-      <li class="microinfo__item">
-        <span class="micro">Lisboa, Portugal</span>
-      </li>
-
-      <li class="microinfo__item" aria-hidden="true"><span class="microinfo__sep"></span></li>
-
-      <li class="microinfo__item">
-        <p class="selo"><span class="selo__ponto"></span> Agenda aberta</p>
-      </li>
-
-      <li class="microinfo__item" aria-hidden="true"><span class="microinfo__sep"></span></li>
-
-      <li class="microinfo__item">
-        <span class="micro" data-hora-lisboa aria-live="off">—:— em Lisboa</span>
-      </li>
-
-      <li class="microinfo__item" aria-hidden="true"><span class="microinfo__sep"></span></li>
-
-      <li class="microinfo__item microinfo__item--fim">
-        <a class="micro link-linha microinfo__ig"
-           href="https://www.instagram.com/crisassistattoo/"
-           target="_blank" rel="noopener">@crisassistattoo</a>
-      </li>
-    </ul>
-
-    <!-- o traço do hero "escorre" por baixo da faixa e segue para a galeria -->
-    <svg class="microinfo__traco" viewBox="0 0 1200 12" height="12"
-         fill="none" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-      <path d="M0 6 L1200 6"/>
-    </svg>
-  </div>
-</section>
-<!-- /secao:microinfo -->
-    <!-- secao:galeria -->
-<section id="galeria" class="secao secao--funda galeria" aria-label="Trabalhos de Cris Assis">
-  <div class="container">
-
-    <div class="galeria__topo">
-      <div>
-        <h2 class="titulo-secao galeria__titulo aparece">Trabalhos</h2>
-        <p class="lead galeria__lead aparece">Tradicional, neo-tradicional, blackwork e flash autoral, tatuados em Lisboa.</p>
-      </div>
-      <a class="link-linha galeria__ig aparece" href="https://www.instagram.com/crisassistattoo/" target="_blank" rel="noopener">Ver tudo no @crisassistattoo</a>
-    </div>
-
-    <div class="galeria__filtros" role="group" aria-label="Filtrar por estilo">
-      <button class="galeria__filtro is-ativo" data-filtro="tudo" type="button">Todos</button>
-      <button class="galeria__filtro" data-filtro="cor" type="button">Tradicional &amp; neo</button>
-      <button class="galeria__filtro" data-filtro="black" type="button">Blackwork</button>
-      <button class="galeria__filtro" data-filtro="flash" type="button">Flash</button>
-    </div>
-
-    <div class="galeria__grade" id="galeria-grade">
-      <figure class="foto foto--cor galeria__item" data-cat="cor"   tabindex="0" role="button" aria-label="Abrir trabalho neo-tradicional">
-        <img src="assets/galeria/work/g01.jpg" width="1440" height="1920" loading="lazy" alt="Dama neo-tradicional a cores, cabelo preto e vermelho">
-        <figcaption class="legenda">Neo-tradicional</figcaption></figure>
-
-      <figure class="foto foto--cor galeria__item" data-cat="black" tabindex="0" role="button" aria-label="Abrir trabalho blackwork">
-        <img src="assets/galeria/work/g02.jpg" width="3024" height="4032" loading="lazy" alt="Rosa em blackwork, preto e cinza">
-        <figcaption class="legenda">Blackwork · rosa</figcaption></figure>
-
-      <figure class="foto foto--cor galeria__item" data-cat="flash" tabindex="0" role="button" aria-label="Abrir folha de flash">
-        <img src="assets/galeria/work/g03.jpg" width="2195" height="1875" loading="lazy" alt="Folha de flash autoral com motivos tradicionais">
-        <figcaption class="legenda">Flash autoral</figcaption></figure>
-
-      <figure class="foto foto--cor galeria__item" data-cat="cor"   tabindex="0" role="button" aria-label="Abrir trabalho neo-tradicional">
-        <img src="assets/galeria/work/g04.jpg" width="1440" height="1920" loading="lazy" alt="Pavão neo-tradicional a cores">
-        <figcaption class="legenda">Neo-tradicional</figcaption></figure>
-
-      <figure class="foto foto--cor galeria__item" data-cat="black" tabindex="0" role="button" aria-label="Abrir trabalho blackwork">
-        <img src="assets/galeria/work/g05.jpg" width="3024" height="4032" loading="lazy" alt="Escorpião em blackwork no braço">
-        <figcaption class="legenda">Blackwork · escorpião</figcaption></figure>
-
-      <figure class="foto foto--cor galeria__item" data-cat="flash" tabindex="0" role="button" aria-label="Abrir folha de flash">
-        <img src="assets/galeria/work/g06.jpg" width="1440" height="1152" loading="lazy" alt="Flash de cobra a cores">
-        <figcaption class="legenda">Flash</figcaption></figure>
-
-      <figure class="foto foto--cor galeria__item" data-cat="black" tabindex="0" role="button" aria-label="Abrir trabalho tradicional">
-        <img src="assets/galeria/work/g07.jpg" width="1440" height="1920" loading="lazy" alt="Coração sagrado em blackwork">
-        <figcaption class="legenda">Tradicional · coração</figcaption></figure>
-
-      <figure class="foto foto--cor galeria__item" data-cat="flash" tabindex="0" role="button" aria-label="Abrir folha de flash">
-        <img src="assets/galeria/work/g08.jpg" width="2480" height="1753" loading="lazy" alt="Folha de flash com águia e rosas">
-        <figcaption class="legenda">Flash autoral</figcaption></figure>
-
-      <figure class="foto foto--cor galeria__item" data-cat="black" tabindex="0" role="button" aria-label="Abrir trabalho blackwork">
-        <img src="assets/galeria/work/g09.jpg" width="1440" height="1920" loading="lazy" alt="Cobra em blackwork no braço">
-        <figcaption class="legenda">Blackwork · cobra</figcaption></figure>
-
-      <figure class="foto foto--cor galeria__item" data-cat="cor"   tabindex="0" role="button" aria-label="Abrir trabalho neo-tradicional">
-        <img src="assets/galeria/work/g10.jpg" width="1440" height="1920" loading="lazy" alt="Braço a cores, neo-tradicional">
-        <figcaption class="legenda">Neo-tradicional · braço</figcaption></figure>
-
-      <figure class="foto foto--cor galeria__item" data-cat="flash" tabindex="0" role="button" aria-label="Abrir folha de flash">
-        <img src="assets/galeria/work/g11.jpg" width="1440" height="1440" loading="lazy" alt="Flash de cobra sobre fundo teal">
-        <figcaption class="legenda">Flash</figcaption></figure>
-
-      <figure class="foto foto--cor galeria__item" data-cat="black" tabindex="0" role="button" aria-label="Abrir trabalho blackwork">
-        <img src="assets/galeria/work/g12.jpg" width="1440" height="1920" loading="lazy" alt="Animal em blackwork com botânica">
-        <figcaption class="legenda">Blackwork</figcaption></figure>
-    </div>
-  </div>
-
-  <!-- Visualizador em tela cheia -->
-  <div class="galeria__lightbox" id="galeria-lb" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Trabalho ampliado">
-    <button class="galeria__lb-fechar" type="button" aria-label="Fechar">&times;</button>
-    <button class="galeria__lb-nav galeria__lb-ant" type="button" aria-label="Anterior">&#8249;</button>
-    <figure class="galeria__lb-fig">
-      <img id="galeria-lb-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="1050" height="1400" alt="">
-      <figcaption id="galeria-lb-cap" class="legenda"></figcaption>
-    </figure>
-    <button class="galeria__lb-nav galeria__lb-prox" type="button" aria-label="Próximo">&#8250;</button>
-  </div>
-</section>
-<!-- /secao:galeria -->
-    <!-- secao:processo -->
-<section id="processo" class="secao processo" aria-label="Do papel à pele">
-  <div class="processo__palco">
-    <div class="container processo__grade">
-
-      <div class="processo__texto">
-        <h2 class="titulo-secao processo__titulo">Do papel <span class="processo__e">à</span> pele</h2>
-        <p class="lead processo__lead">Cada peça começa no papel. Desenho o flash à mão, linha por linha, e só depois ele passa para a pele.</p>
-        <a class="link-linha processo__link" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener">Escolher um flash pela DM</a>
-      </div>
-
-      <div class="processo__imagens">
-        <figure class="processo__fig processo__fig--papel">
-          <img src="assets/galeria/work/g11.jpg" width="1400" height="1400" loading="lazy" alt="Folha de flash com cobras, desenhada pela Cris Assis">
-        </figure>
-        <figure class="processo__fig processo__fig--pele">
-          <img src="assets/galeria/work/g09.jpg" width="1050" height="1400" loading="lazy" alt="Cobra tatuada pela Cris Assis em blackwork">
-        </figure>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- /secao:processo -->
-    <!-- secao:estilos -->
-<section id="estilos" class="secao secao--papel estilos">
-  <div class="container">
-    <header class="estilos__topo aparece">
-      <h2 class="titulo-secao">Estilos</h2>
-      <p class="lead corpo--papel">O que marco na pele, do contorno clássico ao preto cheio.</p>
-    </header>
-
-    <ol class="estilos__lista" role="list">
-      <li class="estilo aparece">
-        <div class="estilo__texto">
-          <h3 class="estilo__nome display">Tradicional<span class="estilo__ou"> / Old-school</span></h3>
-          <svg class="estilo__traco" viewBox="0 0 600 14" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-            <path class="traco-estilo" d="M2,9 C150,3 450,3 598,9" fill="none" stroke="var(--cor-acento)" stroke-width="3" stroke-linecap="round"/>
-          </svg>
-          <p class="corpo corpo--papel estilo__frase">Contorno preto forte e cores cheias, feitos para aguentar décadas sem esborratar.</p>
-        </div>
-        <figure class="foto foto--cor estilo__foto">
-          <img src="assets/galeria/work/g01.jpg" width="1440" height="1920" loading="lazy" decoding="async" alt="Dama old-school a cores, da Cris Assis">
-        </figure>
-      </li>
-
-      <li class="estilo estilo--inv aparece">
-        <div class="estilo__texto">
-          <h3 class="estilo__nome display">Neo-tradicional</h3>
-          <svg class="estilo__traco" viewBox="0 0 600 14" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-            <path class="traco-estilo" d="M2,9 C150,3 450,3 598,9" fill="none" stroke="var(--cor-acento)" stroke-width="3" stroke-linecap="round"/>
-          </svg>
-          <p class="corpo corpo--papel estilo__frase">O clássico com mais volume e paleta: andorinhas, rosas e gueixas em cor cheia.</p>
-        </div>
-        <figure class="foto foto--cor estilo__foto">
-          <img src="assets/galeria/work/g04.jpg" width="1440" height="1920" loading="lazy" decoding="async" alt="Pavão neo-tradicional a cores, da Cris Assis">
-        </figure>
-      </li>
-
-      <li class="estilo aparece">
-        <div class="estilo__texto">
-          <h3 class="estilo__nome display">Blackwork</h3>
-          <svg class="estilo__traco" viewBox="0 0 600 14" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-            <path class="traco-estilo" d="M2,9 C150,3 450,3 598,9" fill="none" stroke="var(--cor-acento)" stroke-width="3" stroke-linecap="round"/>
-          </svg>
-          <p class="corpo corpo--papel estilo__frase">Só preto, bem sólido: teias, escorpiões e botânica com um contraste que salta na pele.</p>
-        </div>
-        <figure class="foto foto--cor estilo__foto">
-          <img src="assets/galeria/work/g05.jpg" width="3024" height="4032" loading="lazy" decoding="async" alt="Escorpião em blackwork, da Cris Assis">
-        </figure>
-      </li>
-
-      <li class="estilo estilo--inv aparece">
-        <div class="estilo__texto">
-          <h3 class="estilo__nome display">Flash autoral</h3>
-          <svg class="estilo__traco" viewBox="0 0 600 14" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-            <path class="traco-estilo" d="M2,9 C150,3 450,3 598,9" fill="none" stroke="var(--cor-acento)" stroke-width="3" stroke-linecap="round"/>
-          </svg>
-          <p class="corpo corpo--papel estilo__frase">Desenho meu, pronto para marcar no dia: escolhes da folha e saímos a tatuar.</p>
-        </div>
-        <figure class="foto foto--cor estilo__foto">
-          <img src="assets/galeria/work/g08.jpg" width="2480" height="1753" loading="lazy" decoding="async" alt="Folha de flash autoral da Cris Assis">
-        </figure>
-      </li>
-    </ol>
-
-  </div>
-</section>
-<!-- /secao:estilos -->
-    <!-- secao:sobre -->
-<section id="sobre" class="secao sobre">
-  <div class="container">
-    <div class="grade grade--12 sobre__grade">
-
-      <!-- Retrato -->
-      <figure class="foto foto--pb sobre__retrato aparece">
-        <img src="assets/galeria/work/artist.jpg" width="800" height="800" loading="lazy"
-             alt="Cris Assis, tatuadora, a preto e branco">
-        <span class="script sobre__assinatura" aria-hidden="true">Cris</span>
+    <div class="mural-topo" aria-label="Flash e tatuagem da Cris Assis">
+      <figure class="folha">
+        <span class="fita a"></span><span class="fita b"></span>
+        <img src="img/flash-caveira.webp" alt="Folha de flash da Cris Assis: borboletas, caveira com serpente, rosas e cigana, Lisboa 2025" width="1400" height="1120">
       </figure>
-
-      <!-- Texto -->
-      <div class="sobre__texto">
-        <h2 class="titulo-secao sobre__titulo aparece">Sobre</h2>
-
-        <p class="lead sobre__lead aparece">Brasileira, a tatuar em Lisboa.</p>
-
-        <p class="corpo aparece">
-          Faço tradicional, neo-tradicional e blackwork — linha preta forte, preenchimento
-          sólido e flash de desenho próprio.        </p>
-
-
-        <!-- Desenho autoral + pintura (destaque "Paintings") -->
-        <div class="sobre__pintura aparece">
-          <figure class="foto foto--cor sobre__pintura-foto">
-            <img src="assets/galeria/work/art.jpg" width="800" height="800" loading="lazy"
-                 alt="Folha de flash desenhada pela Cris Assis">
-          </figure>
-          <div class="sobre__pintura-txt">
-            <h3 class="display sobre__sub">Desenho e pinto</h3>
-            <p class="corpo">
-              As folhas de flash são desenho meu, e fora da pele também pinto
-              em tela. Se queres uma peça para a parede, fala comigo.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /secao:sobre -->
-    <!-- secao:estudio -->
-<!-- secao:estudio — agente Parlor · fundo secao--funda -->
-<section id="estudio" class="secao secao--funda">
-  <div class="container">
-    <h2 class="titulo-secao aparece">O estúdio</h2>
-
-    <div class="grade grade--12 estudio-grade">
-
-      <!-- Foto principal: interior (ambiente), P&B -->
-      <figure class="estudio-interior estudio-parallax aparece">
-        <div class="foto foto--pb">
-          <img src="assets/estudio/estudio-interior.webp" width="1280" height="854"
-               loading="lazy" decoding="async"
-               alt="Interior de um estúdio de tatuagem em Lisboa, com cadeira, bancada e luz de trabalho">
-          <span class="ilustrativa">imagem ilustrativa</span>
-        </div>
-        <figcaption class="legenda">Ambiente do estúdio · Lisboa</figcaption>
+      <figure class="polaroide">
+        <img src="img/gueixa.webp" alt="Tatuagem tradicional colorida de uma gueixa no antebraço, feita pela Cris Assis" width="900" height="1200">
+        <figcaption class="mono">tatuado em Lisboa</figcaption>
       </figure>
-
-      <!-- Coluna de texto + A DEFINIR -->
-      <div class="estudio-texto">
-        <p class="lead aparece">Tatuo em Lisboa, só com marcação.</p>
-        <p class="corpo aparece">
-          A morada do estúdio é partilhada pela DM quando a sessão fica confirmada.
-          A morada é partilhada por DM assim que confirmamos a tua sessão.
-        </p>
-
-        <div class="estudio-definir aparece">
-          <span class="micro estudio-definir__tag">A definir</span>
-          <p class="estudio-definir__item">Nome do estúdio</p>
-          <p class="estudio-definir__item">Morada em Lisboa</p>
-          <p class="micro estudio-definir__nota">Partilhada na confirmação, por DM</p>
-        </div>
-
-      </div>
-
-      <!-- Foto secundária: bancada (detalhe), P&B -->
-      <figure class="estudio-bancada aparece">
-        <div class="foto foto--pb">
-          <img src="assets/estudio/estudio-bancada.webp" width="800" height="1226"
-               loading="lazy" decoding="async"
-               alt="Bancada de trabalho com tinta e material de tatuagem descartável">
-          <span class="ilustrativa">imagem ilustrativa</span>
-        </div>
-        <figcaption class="legenda">Bancada de trabalho</figcaption>
-      </figure>
-
-    </div>
-  </div>
-</section>
-<!-- /secao:estudio -->
-    <!-- secao:agendar -->
-<!-- Seção: agendar (clímax / destaque) — fundo tinta. Montador: incluir secoes/agendar.css e secoes/agendar.js -->
-<section id="agendar" class="secao secao--tinta agendar">
-  <div class="container agendar__wrap">
-
-    <div class="agendar__topo">
-      <h2 class="titulo-secao agendar__titulo">Marcar</h2>
-      <p class="lead agendar__lead">Marco tudo por mensagem direta no Instagram. Conta-me a ideia e trato do resto.</p>
-    </div>
-
-    <div class="agendar__ficha aparece">
-      <p class="agendar__ficha-titulo">Na mensagem, manda-me:</p>
-      <p class="agendar__ficha-texto">a ideia ou o flash que escolheste, o sítio do corpo, o tamanho aproximado e referências, se tiveres. Respondo com o orçamento e as datas livres.</p>
-    </div>
-
-    <div class="agendar__acao aparece">
-      <div class="agendar__botao-caixa">
-        <a class="btn btn--primario btn--grande btn--bloco-mob" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener">Marcar pelo Instagram</a>
-        <!-- traço que FECHA a cena: sublinhado/laço desenhado sob o botão principal -->
-        <svg class="agendar__traco" viewBox="0 0 440 72" fill="none" aria-hidden="true" focusable="false">
-          <path d="M18 44 C 120 20, 320 20, 422 40 C 430 48, 410 58, 360 60 C 240 66, 90 66, 24 56"
-                stroke-linecap="round" fill="none" />
+      <div class="carimbo" aria-hidden="true">
+        <svg class="gira" viewBox="0 0 200 200">
+          <defs><path id="circ" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+          <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" stroke-width="4"/>
+          <circle cx="100" cy="100" r="54" fill="none" stroke="currentColor" stroke-width="3"/>
+          <text font-family="Special Elite, monospace" font-size="18" fill="currentColor">
+            <textPath href="#circ" textLength="446" lengthAdjust="spacing">CRIS ASSIS ✦ LISBOA ✦ TATTOO ✦ </textPath>
+          </text>
         </svg>
+        <div class="centro">
+          <svg width="44%" viewBox="0 0 100 100"><path d="M50 88 C20 66 6 48 10 30 C14 14 34 10 50 28 C66 10 86 14 90 30 C94 48 80 66 50 88 Z" fill="currentColor" stroke="#1B1512" stroke-width="5"/></svg>
+        </div>
       </div>
-
-      <a class="btn btn--fantasma btn--grande btn--bloco-mob" aria-disabled="true" aria-label="WhatsApp — a definir">WhatsApp (a definir)</a>
     </div>
+  </section>
 
-    <a class="link-linha agendar__perfil" href="https://www.instagram.com/crisassistattoo/" target="_blank" rel="noopener">@crisassistattoo</a>
-
-  </div>
-</section>
-<!-- /secao:agendar -->
-  </main>
-
-  <!-- ===== RODAPÉ ===== -->
-  <footer class="rodape">
-    <div class="container" style="display:flex; flex-wrap:wrap; gap:var(--esp-4); justify-content:space-between; align-items:flex-end;">
-      <div>
-        <p class="display" style="font-size:var(--d-sm); margin:0 0 var(--esp-2);">Cris Assis</p>
-        <p class="selo"><span class="selo__ponto"></span> Agenda aberta · Lisboa, Portugal</p>
-      </div>
-      <nav aria-label="Rodapé" style="display:flex; flex-direction:column; gap:0.5em; text-align:right;">
-        <a class="link-linha" href="https://www.instagram.com/crisassistattoo/" target="_blank" rel="noopener">@crisassistattoo</a>
-        <a class="link-linha" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener">Marcar pela DM</a>
-      </nav>
-      <p class="micro" style="width:100%; margin-top:var(--esp-3); color:var(--cor-texto-3);">© <span id="ano"></span> Cris Assis · Lisboa</p>
+  <div class="corrida" aria-hidden="true">
+    <div class="trilho">
+      <span>TRADICIONAL<i>★</i>NEO-TRADICIONAL<i>★</i>BLACKWORK<i>★</i>FLASH<i>★</i>LISBOA<i>★</i>TRADICIONAL<i>★</i>NEO-TRADICIONAL<i>★</i>BLACKWORK<i>★</i>FLASH<i>★</i>LISBOA<i>★</i></span>
+      <span>TRADICIONAL<i>★</i>NEO-TRADICIONAL<i>★</i>BLACKWORK<i>★</i>FLASH<i>★</i>LISBOA<i>★</i>TRADICIONAL<i>★</i>NEO-TRADICIONAL<i>★</i>BLACKWORK<i>★</i>FLASH<i>★</i>LISBOA<i>★</i></span>
     </div>
-  </footer>
-
-  <!-- ===== Barra fixa de agendar (mobile) ===== -->
-  <div class="barra-agendar">
-    <a class="btn btn--primario btn--bloco" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener">Marcar no Instagram</a>
   </div>
 
-  <!-- ===== Bibliotecas de cena ===== -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="js/cena.js" defer></script>
-  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+  <!-- NA PELE -->
+  <section class="pele" id="trabalhos">
+    <div class="pele-cab">
+      <h2 class="adesivo">NA PELE</h2>
+      <p class="bilhete mono">Pin-up, pavão, sagrado coração, cobra, lobo. Cor cheia ou só preto, sempre com contorno forte.</p>
+    </div>
 
-  <!-- DM: copia uma mensagem pronta antes de abrir a conversa (o Instagram não aceita texto no link) -->
-  <div class="aviso-dm" id="aviso-dm" role="status" aria-live="polite"></div>
-  <script>
-  (function(){
-    var msg = 'Olá Cris! Vi o teu site e quero marcar uma tatuagem. A ideia é: ';
-    var aviso = document.getElementById('aviso-dm'), t;
-    function mostra(txt){ aviso.textContent = txt; aviso.classList.add('is-on'); clearTimeout(t); t = setTimeout(function(){ aviso.classList.remove('is-on'); }, 3200); }
-    document.addEventListener('click', function(e){
-      var a = e.target.closest && e.target.closest('a[href*="ig.me/m/"]');
-      if (!a || !navigator.clipboard) return;
-      navigator.clipboard.writeText(msg).then(function(){ mostra('Mensagem copiada — é só colar na DM e enviar'); }).catch(function(){});
-    });
-  })();
-  </script>
-<script src="secoes/hero.js"></script>
-<script src="secoes/microinfo.js"></script>
-<script src="secoes/galeria.js"></script>
-<script src="secoes/processo.js"></script>
-<script src="secoes/estilos.js"></script>
-<script src="secoes/sobre.js"></script>
-<script src="secoes/estudio.js"></script>
-<script src="secoes/agendar.js"></script>
+    <div class="parede">
+      <button class="foto p1" data-i="0"><span class="fita"></span><img src="img/pinup.webp" alt="Pin-up tradicional colorida com flores vermelhas no braço" width="1000" height="1333" loading="lazy"><span class="leg mono">pin-up</span></button>
+      <button class="foto p2" data-i="1"><span class="fita"></span><img src="img/pavao.webp" alt="Pavão tradicional em verde-azulado e vermelho" width="1000" height="1333" loading="lazy"><span class="leg mono">pavão</span></button>
+      <button class="foto p3" data-i="2"><span class="fita"></span><img src="img/rosa-nuca.webp" alt="Rosa com borboleta em preto e cinza na nuca" width="1000" height="1333" loading="lazy"><span class="leg mono">rosa e borboleta</span></button>
+      <button class="foto p4" data-i="3"><span class="fita"></span><img src="img/coracao.webp" alt="Sagrado coração em blackwork no antebraço" width="1000" height="1333" loading="lazy"><span class="leg mono">sagrado coração</span></button>
+      <button class="foto p5" data-i="4"><span class="fita"></span><img src="img/gueixa.webp" alt="Gueixa tradicional colorida no antebraço" width="900" height="1200" loading="lazy"><span class="leg mono">gueixa</span></button>
+      <button class="foto p6" data-i="5"><span class="fita"></span><img src="img/cobra.webp" alt="Cobra em preto no braço" width="1000" height="1333" loading="lazy"><span class="leg mono">cobra</span></button>
+      <button class="foto p7" data-i="6"><span class="fita"></span><img src="img/escorpiao.webp" alt="Escorpião em blackwork no antebraço" width="1000" height="1333" loading="lazy"><span class="leg mono">escorpião</span></button>
+      <button class="foto p8" data-i="7"><span class="fita"></span><img src="img/lobo.webp" alt="Lobo em preto com ramo no antebraço" width="1000" height="1333" loading="lazy"><span class="leg mono">lobo</span></button>
+      <a class="mais" href="https://www.instagram.com/crisassistattoo/" target="_blank" rel="noopener">
+        <strong>Tem muito mais no Instagram</strong>
+        <span class="mono">@crisassistattoo →</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="xadrez" aria-hidden="true"></div>
+
+  <!-- FLASH -->
+  <section class="flash" id="flash">
+    <div class="flash-intro flash-intro-cel">
+      <h2 class="adesivo">FLASH</h2>
+      <p>Folhas desenhadas e pintadas por ela. Viste um que é a tua cara? Manda print pela DM e pergunta.</p>
+      <a class="btn" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener">PERGUNTAR PELA DM →</a>
+    </div>
+    <div class="flash-janela">
+      <div class="flash-trilho">
+        <div class="flash-intro">
+          <h2 class="adesivo">FLASH</h2>
+          <p>Folhas desenhadas e pintadas por ela. Viste um que é a tua cara? Manda print pela DM e pergunta.</p>
+          <a class="btn" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener">PERGUNTAR PELA DM →</a>
+        </div>
+        <figure class="ff"><span class="fita a"></span><img src="img/flash-roxo.webp" alt="Folha de flash em fundo lilás: diabinhas, chamas, olho, borboleta e mão" width="1400" height="1196" loading="lazy"></figure>
+        <figure class="ff"><span class="fita b"></span><img src="img/flash-coracoes.webp" alt="Folha de flash com seis corações vermelhos com rosto, Lisboa 2025" width="1400" height="1120" loading="lazy"></figure>
+        <figure class="ff"><span class="fita a"></span><img src="img/flash-verde.webp" alt="Folha de flash em fundo verde: cobra, papagaio, pirata, andorinha e rosa" width="1400" height="990" loading="lazy"></figure>
+        <figure class="ff"><span class="fita b"></span><img src="img/flash-azul.webp" alt="Folha de flash em fundo azul: escorpião, cobra e aranha" width="1400" height="1400" loading="lazy"></figure>
+        <figure class="ff"><span class="fita a"></span><img src="img/flash-caveira.webp" alt="Folha de flash: borboletas, caveira com serpente, rosas e cigana, Lisboa 2025" width="1400" height="1120" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="xadrez" aria-hidden="true"></div>
+
+  <!-- COMO MARCAR -->
+  <section class="marcar" id="marcar">
+    <h2 class="adesivo">COMO MARCAR</h2>
+    <div class="passos">
+      <svg class="caminho" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M120 120 C 420 60, 520 230, 600 290 S 820 420, 1080 500"/>
+      </svg>
+      <article class="passo">
+        <div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#F3E6C8" stroke-width="3" stroke-linejoin="round"><path d="M5 7h22v14H14l-6 5v-5H5z"/></svg></div>
+        <h3>Manda a ideia</h3>
+        <p>Pela DM do Instagram: o desenho ou a referência, o sítio do corpo e o tamanho aproximado.</p>
+      </article>
+      <article class="passo">
+        <div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#F3E6C8" stroke-width="3" stroke-linejoin="round"><rect x="5" y="7" width="22" height="20" rx="2"/><path d="M5 13h22M11 4v6M21 4v6"/></svg></div>
+        <h3>Recebes valor e data</h3>
+        <p>Ela responde com o orçamento e o dia para tatuar.</p>
+      </article>
+      <article class="passo">
+        <div class="ic"><svg viewBox="0 0 32 32"><path d="M16 27 C7 20 3 15 4.5 10 C6 5 12 4.5 16 9.5 C20 4.5 26 5 27.5 10 C29 15 25 20 16 27 Z" fill="#F3E6C8"/></svg></div>
+        <h3>Dia de tatuar</h3>
+        <p>Chegas no dia combinado e sais com a peça na pele.</p>
+      </article>
+    </div>
+
+    <form class="talao" id="talao" action="https://ig.me/m/crisassistattoo" target="_blank">
+      <h3>Monta a tua mensagem</h3>
+      <p class="sub">Preenche, copia e cola na DM. Assim ela já tem tudo para te responder.</p>
+      <div class="campo">
+        <label class="mono" for="ideia">a ideia</label>
+        <textarea id="ideia" name="ideia" placeholder="ex.: uma andorinha tradicional com rosa, a cores"></textarea>
+      </div>
+      <div class="duas">
+        <div class="campo">
+          <label class="mono" for="sitio">sítio do corpo</label>
+          <input id="sitio" name="sitio" placeholder="ex.: antebraço">
+        </div>
+        <div class="campo">
+          <label class="mono" for="tamanho">tamanho</label>
+          <select id="tamanho" name="tamanho">
+            <option>Pequena (até 7 cm)</option>
+            <option selected>Média (7 a 15 cm)</option>
+            <option>Grande (mais de 15 cm)</option>
+            <option>Ainda não sei</option>
+          </select>
+        </div>
+      </div>
+      <div class="campo">
+        <label class="mono" for="quando">quando dava jeito</label>
+        <input id="quando" name="quando" placeholder="ex.: fins de semana de dezembro">
+      </div>
+      <button class="btn" type="submit">COPIAR E ABRIR A DM →</button>
+      <p class="aviso mono" id="aviso" role="status"></p>
+    </form>
+  </section>
+
+  <div class="xadrez" aria-hidden="true"></div>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <figure class="retrato">
+      <span class="fita a"></span><span class="fita b"></span>
+      <img src="img/cris.webp" alt="Retrato a preto e branco da Cris Assis no estúdio" width="800" height="800" loading="lazy">
+      <figcaption class="mono">Cris Assis, Lisboa</figcaption>
+    </figure>
+    <div>
+      <h2 class="adesivo">SOU A CRIS</h2>
+      <p>Tatuo em Lisboa e desenho os meus próprios flashes. Gosto do tradicional: linha preta firme, cor sólida e desenho que se lê de longe.</p>
+      <p>Também faço neo-tradicional e blackwork. Se tens uma ideia, manda pela DM e vemos juntos como fica melhor na pele.</p>
+      <div class="estilos mono"><span>tradicional</span><span>neo-tradicional</span><span>blackwork</span><span>flash autoral</span></div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final">
+    <h2 class="adesivo">VAMOS<br>TATUAR?</h2>
+    <p>Manda a tua ideia pela DM do Instagram. Lisboa, Portugal.</p>
+    <a class="btn claro" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener">MARCAR PELA DM →</a>
+    <a class="ig2 mono" href="https://www.instagram.com/crisassistattoo/" target="_blank" rel="noopener">@crisassistattoo</a>
+  </section>
+</main>
+
+<footer class="rodape mono">
+  <span>© 2026 Cris Assis · Lisboa</span>
+  <span>site por <a href="#">Benatti &amp; Benatti</a></span>
+</footer>
+
+<a class="dm-fixo" id="dmFixo" href="https://ig.me/m/crisassistattoo" target="_blank" rel="noopener" aria-label="Marcar pela DM do Instagram">DM</a>
+
+<dialog class="caixa" id="caixa" aria-label="Foto ampliada">
+  <figure><img id="caixaImg" alt=""><figcaption class="mono" id="caixaLeg"></figcaption></figure>
+  <button class="fechar" aria-label="Fechar">✕</button>
+  <button class="ant" aria-label="Foto anterior">←</button>
+  <button class="prox" aria-label="Próxima foto">→</button>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  /* ---------- botão fixo da DM aparece depois do topo ---------- */
+  var dm = document.getElementById('dmFixo');
+  var vis = {topo:true, final:false};
+  var obs = new IntersectionObserver(function(es){
+    es.forEach(function(e){ vis[e.target.classList.contains('topo') ? 'topo' : 'final'] = e.isIntersecting; });
+    dm.classList.toggle('on', !vis.topo && !vis.final);
+  });
+  obs.observe(document.querySelector('.topo'));
+  obs.observe(document.querySelector('.final'));
+
+  /* ---------- lightbox ---------- */
+  var fotos = Array.prototype.slice.call(document.querySelectorAll('.foto'));
+  var caixa = document.getElementById('caixa'), cImg = document.getElementById('caixaImg'), cLeg = document.getElementById('caixaLeg');
+  var atual = 0;
+  function mostra(i){
+    atual = (i + fotos.length) % fotos.length;
+    var im = fotos[atual].querySelector('img');
+    cImg.src = im.src; cImg.alt = im.alt;
+    cLeg.textContent = fotos[atual].querySelector('.leg').textContent;
+  }
+  fotos.forEach(function(f,i){ f.addEventListener('click', function(){ mostra(i); caixa.showModal(); }); });
+  caixa.querySelector('.fechar').onclick = function(){ caixa.close(); };
+  caixa.querySelector('.ant').onclick = function(){ mostra(atual-1); };
+  caixa.querySelector('.prox').onclick = function(){ mostra(atual+1); };
+  caixa.addEventListener('click', function(e){ if (e.target === caixa) caixa.close(); });
+  document.addEventListener('keydown', function(e){
+    if (!caixa.open) return;
+    if (e.key === 'ArrowLeft') mostra(atual-1);
+    if (e.key === 'ArrowRight') mostra(atual+1);
+  });
+  var x0 = null;
+  caixa.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, {passive:true});
+  caixa.addEventListener('touchend', function(e){
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 50) mostra(atual + (dx < 0 ? 1 : -1));
+    x0 = null;
+  });
+
+  /* ---------- talão: monta, copia e abre a DM ---------- */
+  var talao = document.getElementById('talao'), aviso = document.getElementById('aviso');
+  talao.addEventListener('submit', function(e){
+    e.preventDefault();
+    var v = function(id){ return document.getElementById(id).value.trim(); };
+    var msg = 'Olá, Cris! Queria marcar uma tatuagem.\n' +
+      '\nIdeia: ' + (v('ideia') || '(mando referência a seguir)') +
+      '\nSítio do corpo: ' + (v('sitio') || '-') +
+      '\nTamanho: ' + v('tamanho') +
+      '\nQuando dava jeito: ' + (v('quando') || '-');
+    var abre = function(){ window.open('https://ig.me/m/crisassistattoo', '_blank', 'noopener'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(msg).then(function(){
+        aviso.textContent = 'Mensagem copiada. É só colar na DM.'; abre();
+      }, function(){ aviso.textContent = msg; abre(); });
+    } else { aviso.textContent = msg; abre(); }
+  });
+
+  /* ---------- movimento ---------- */
+  // ?estatico mostra tudo parado (para capturas de página inteira)
+  if (/estatico/.test(location.search)) document.documentElement.classList.add('estatico');
+  if (!window.gsap || matchMedia('(prefers-reduced-motion: reduce)').matches || /estatico/.test(location.search)) return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  // topo
+  document.querySelectorAll('h1 .palavra').forEach(function(p){
+    p.innerHTML = p.textContent.split('').map(function(c){return '<span class="l">'+c+'</span>'}).join('');
+  });
+  var tl = gsap.timeline({defaults:{ease:'back.out(1.8)'}});
+  tl.from('h1 .l',{y:-120,rotation:function(){return gsap.utils.random(-18,18)},opacity:0,duration:.7,stagger:.06})
+    .from('.faixa .corpo, .faixa .dobra, .faixa text',{opacity:0,duration:.35},'-=.2');
+  document.querySelectorAll('.faixa .contorno').forEach(function(path){
+    var len = path.getTotalLength();
+    gsap.fromTo(path,{strokeDasharray:len,strokeDashoffset:len},{strokeDashoffset:0,duration:.9,ease:'power2.inOut',delay:.55});
+  });
+  tl.from('.sobrenome, .linha, .acoes',{y:18,opacity:0,duration:.5,stagger:.1,ease:'power2.out'},'-=.4')
+    .from('.folha',{scale:1.15,rotation:-12,opacity:0,duration:.6},'-=.9')
+    .from('.polaroide',{scale:1.25,rotation:18,y:-40,opacity:0,duration:.55},'-=.25')
+    .from('.carimbo',{scale:2.2,opacity:0,duration:.4,ease:'power4.out'},'-=.1');
+
+  // títulos em adesivo "colam" ao entrar
+  gsap.utils.toArray('section:not(.topo) h2.adesivo').forEach(function(h){
+    gsap.from(h,{scale:1.3,rotation:-6,opacity:0,duration:.6,ease:'back.out(2)',
+      scrollTrigger:{trigger:h,start:'top 85%',once:true}});
+  });
+  gsap.from('.bilhete',{y:40,rotation:12,opacity:0,duration:.6,ease:'back.out(1.6)',scrollTrigger:{trigger:'.bilhete',start:'top 88%',once:true}});
+
+  // polaroides caem na parede
+  gsap.set('.parede > *',{opacity:0,y:90,rotation:10});
+  ScrollTrigger.batch('.parede > *',{start:'top 92%',once:true,onEnter:function(els){
+    gsap.to(els,{opacity:1,y:0,rotation:0,duration:.75,stagger:.09,ease:'back.out(1.4)'});
+  }});
+
+  // flash corre na horizontal (computador)
+  var mm = gsap.matchMedia();
+  mm.add('(min-width: 861px)', function(){
+    var trilho = document.querySelector('.flash-trilho');
+    var dist = function(){ return Math.max(0, trilho.scrollWidth - window.innerWidth); };
+    gsap.to(trilho,{x:function(){return -dist()},ease:'none',
+      scrollTrigger:{trigger:'.flash',start:'top top',end:function(){return '+=' + dist()},pin:true,scrub:true,anticipatePin:1,invalidateOnRefresh:true}});
+
+    // linha do caminho se desenha
+    var p = document.querySelector('.caminho path'), len = p.getTotalLength();
+    gsap.fromTo(p,{strokeDasharray:len,strokeDashoffset:len},{strokeDashoffset:0,ease:'none',
+      scrollTrigger:{trigger:'.passos',start:'top 75%',end:'bottom 60%',scrub:true}});
+  });
+
+  // passos e talão
+  gsap.utils.toArray('.passo').forEach(function(el){
+    gsap.from(el,{y:60,opacity:0,duration:.6,ease:'back.out(1.5)',scrollTrigger:{trigger:el,start:'top 85%',once:true}});
+  });
+  gsap.from('.talao',{y:80,rotation:4,opacity:0,duration:.7,ease:'power3.out',scrollTrigger:{trigger:'.talao',start:'top 85%',once:true}});
+
+  // sobre
+  gsap.from('.retrato',{rotation:-14,y:60,opacity:0,duration:.8,ease:'back.out(1.4)',scrollTrigger:{trigger:'.sobre',start:'top 75%',once:true}});
+  gsap.from('.estilos span',{scale:0,opacity:0,duration:.4,stagger:.07,ease:'back.out(2.5)',scrollTrigger:{trigger:'.estilos',start:'top 90%',once:true}});
+
+  window.addEventListener('load', function(){ ScrollTrigger.refresh(); });
+})();
+</script>
+<div class="aviso-dm" id="aviso-dm" role="status" aria-live="polite"></div>
+<style>
+  .aviso-dm{position:fixed;left:50%;bottom:104px;z-index:70;transform:translate(-50%,16px);opacity:0;pointer-events:none;
+    background:var(--tinta);color:var(--papel-claro);font-size:15px;font-weight:600;padding:12px 18px;border:3px solid var(--tinta);
+    box-shadow:4px 4px 0 var(--vermelho);max-width:calc(100% - 32px);text-align:center;transition:opacity .25s,transform .25s}
+  .aviso-dm.on{opacity:1;transform:translate(-50%,0)}
+</style>
+<script>
+/* links diretos para a DM: copiam uma mensagem pronta (o Instagram não aceita texto no link) */
+(function(){
+  var msg='Olá Cris! Vi o teu site e quero marcar uma tatuagem. A ideia é: ';
+  var av=document.getElementById('aviso-dm'),t;
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href*="ig.me/m/"]');
+    if(!a||!navigator.clipboard)return;
+    navigator.clipboard.writeText(msg).then(function(){
+      av.textContent='Mensagem copiada — é só colar na DM e enviar';av.classList.add('on');
+      clearTimeout(t);t=setTimeout(function(){av.classList.remove('on')},3200);
+    }).catch(function(){});
+  });
+})();
+</script>
 </body>
 </html>

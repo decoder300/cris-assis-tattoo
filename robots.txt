@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /base.html
-Sitemap: https://decoder300.github.io/cris-assis-tattoo/sitemap.xml
