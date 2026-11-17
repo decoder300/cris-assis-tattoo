@@ -1,0 +1,167 @@
+/* ============================================================
+   Seção: agendar (clímax da ação) — só tokens do DS.
+   Nenhuma cor/fonte/espaço fora de tokens.css.
+   ============================================================ */
+
+.agendar { overflow: hidden; }
+
+.agendar__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--esp-4);
+}
+
+.agendar__topo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--esp-2);
+}
+
+.agendar__titulo {
+  font-size: var(--d-lg);          /* grande: clímax */
+  margin: 0;
+}
+
+.agendar__lead {
+  max-width: 34ch;
+  color: var(--cor-texto-2);
+}
+
+/* ---- Passos: uma linha de tinta com três pontos (sem números) ---- */
+.agendar__passos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: var(--larg-max);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 3vw, var(--esp-5));
+  text-align: left;
+  position: relative;
+  padding-top: var(--esp-4);
+}
+/* a linha que liga os passos */
+.agendar__passos::before {
+  content: "";
+  position: absolute; left: 6px; right: 0; top: calc(var(--esp-4) + 6px);
+  height: 0;
+  border-top: 2px dashed rgba(239,230,214,0.35);
+}
+.agendar__passo {
+  position: relative;
+  padding-top: var(--esp-4);
+}
+/* ponto de tinta sobre a linha */
+.agendar__passo::before {
+  content: "";
+  position: absolute; left: 0; top: 0;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--cor-acento-claro);
+  box-shadow: 0 0 0 4px var(--cor-tinta);
+}
+.agendar__passo-titulo {
+  font-family: var(--fonte-display);
+  font-style: italic;
+  font-weight: 900;
+  text-transform: none;
+  font-size: var(--txt-xl);
+  line-height: 1.05;
+  margin: 0 0 var(--esp-1);
+}
+
+/* ---- Ação ---- */
+.agendar__acao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--esp-3);
+  width: 100%;
+}
+
+.btn--grande {
+  font-size: var(--txt-base);
+  padding: 1.3em 2.6em;
+  letter-spacing: 0.05em;
+}
+
+.agendar__botao-caixa {
+  position: relative;
+  display: inline-block;
+}
+
+/* traço que fecha a cena, por baixo do botão principal */
+.agendar__traco {
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+  width: min(112%, 440px);
+  height: auto;
+  overflow: visible;
+  pointer-events: none;
+}
+/* estado inicial do desenho (JS/GSAP controla o desenhar na rolagem) */
+.agendar__traco path {
+  stroke: var(--cor-acento-claro);
+  stroke-width: var(--cena-espessura);
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+/* sem JS ou movimento reduzido: traço já pronto */
+.no-js .agendar__traco path { stroke-dasharray: none; stroke-dashoffset: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .agendar__traco path { stroke-dasharray: none; stroke-dashoffset: 0; }
+}
+
+.agendar__dica { max-width: 40ch; }
+
+.agendar__perfil {
+  color: var(--cor-texto-2);
+  font-size: var(--txt-sm);
+  letter-spacing: 0.04em;
+}
+
+/* ---- Celular: botões em bloco, passos empilhados ---- */
+@media (max-width: 760px) {
+  .agendar__passos {
+    grid-template-columns: 1fr;
+    gap: var(--esp-4);
+    padding-top: var(--esp-2);
+    padding-left: var(--esp-4);
+  }
+  /* no celular a linha fica vertical, à esquerda */
+  .agendar__passos::before {
+    left: 6px; right: auto; top: var(--esp-2); bottom: 0;
+    height: auto; width: 0;
+    border-top: 0; border-left: 2px dashed rgba(239,230,214,0.35);
+  }
+  .agendar__passo { padding-top: 0; }
+  .agendar__passo::before { left: calc(-1 * var(--esp-4)); top: 4px; }
+  .btn--bloco-mob { width: 100%; justify-content: center; }
+  .agendar__botao-caixa { display: block; width: 100%; }
+  .agendar__traco { bottom: -14px; width: 100%; }
+}
+
+@media print {
+  .agendar__traco { display: none; }
+}
+
+/* ---- Ficha de marcação (papel sobre a tinta) ---- */
+.agendar__ficha {
+  width: 100%; max-width: 640px; margin-inline: auto;
+  background: var(--cor-papel); color: var(--cor-papel-texto);
+  border: 2px solid var(--cor-papel-texto);
+  box-shadow: 10px 10px 0 0 var(--cor-acento);
+  padding: clamp(20px, 3vw, 32px); text-align: left;
+  rotate: -0.8deg;
+}
+.agendar__ficha-titulo {
+  font-family: var(--fonte-display); font-style: italic; font-weight: 900;
+  font-size: var(--txt-xl); line-height: 1.1; margin: 0 0 0.4em;
+}
+.agendar__ficha-texto { font-size: var(--txt-lg); line-height: 1.55; color: var(--cor-papel-texto-2); margin: 0; }
+@media (max-width: 760px) { .agendar__ficha { width: calc(100% - 10px); } }

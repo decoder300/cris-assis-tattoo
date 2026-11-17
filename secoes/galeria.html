@@ -1,0 +1,80 @@
+<section id="galeria" class="secao secao--funda galeria" aria-label="Trabalhos de Cris Assis">
+  <div class="container">
+
+    <div class="galeria__topo">
+      <div>
+        <h2 class="titulo-secao galeria__titulo aparece">Trabalhos</h2>
+        <p class="lead galeria__lead aparece">Tradicional, neo-tradicional, blackwork e flash autoral, tatuados em Lisboa.</p>
+      </div>
+      <a class="link-linha galeria__ig aparece" href="https://www.instagram.com/crisassistattoo/" target="_blank" rel="noopener">Ver tudo no @crisassistattoo</a>
+    </div>
+
+    <div class="galeria__filtros" role="group" aria-label="Filtrar por estilo">
+      <button class="galeria__filtro is-ativo" data-filtro="tudo" type="button">Todos</button>
+      <button class="galeria__filtro" data-filtro="cor" type="button">Tradicional &amp; neo</button>
+      <button class="galeria__filtro" data-filtro="black" type="button">Blackwork</button>
+      <button class="galeria__filtro" data-filtro="flash" type="button">Flash</button>
+    </div>
+
+    <div class="galeria__grade" id="galeria-grade">
+      <figure class="foto foto--cor galeria__item" data-cat="cor"   tabindex="0" role="button" aria-label="Abrir trabalho neo-tradicional">
+        <img src="assets/galeria/work/g01.jpg" width="1440" height="1920" loading="lazy" alt="Dama neo-tradicional a cores, cabelo preto e vermelho">
+        <figcaption class="legenda">Neo-tradicional</figcaption></figure>
+
+      <figure class="foto foto--cor galeria__item" data-cat="black" tabindex="0" role="button" aria-label="Abrir trabalho blackwork">
+        <img src="assets/galeria/work/g02.jpg" width="3024" height="4032" loading="lazy" alt="Rosa em blackwork, preto e cinza">
+        <figcaption class="legenda">Blackwork · rosa</figcaption></figure>
+
+      <figure class="foto foto--cor galeria__item" data-cat="flash" tabindex="0" role="button" aria-label="Abrir folha de flash">
+        <img src="assets/galeria/work/g03.jpg" width="2195" height="1875" loading="lazy" alt="Folha de flash autoral com motivos tradicionais">
+        <figcaption class="legenda">Flash autoral</figcaption></figure>
+
+      <figure class="foto foto--cor galeria__item" data-cat="cor"   tabindex="0" role="button" aria-label="Abrir trabalho neo-tradicional">
+        <img src="assets/galeria/work/g04.jpg" width="1440" height="1920" loading="lazy" alt="Pavão neo-tradicional a cores">
+        <figcaption class="legenda">Neo-tradicional</figcaption></figure>
+
+      <figure class="foto foto--cor galeria__item" data-cat="black" tabindex="0" role="button" aria-label="Abrir trabalho blackwork">
+        <img src="assets/galeria/work/g05.jpg" width="3024" height="4032" loading="lazy" alt="Escorpião em blackwork no braço">
+        <figcaption class="legenda">Blackwork · escorpião</figcaption></figure>
+
+      <figure class="foto foto--cor galeria__item" data-cat="flash" tabindex="0" role="button" aria-label="Abrir folha de flash">
+        <img src="assets/galeria/work/g06.jpg" width="1440" height="1152" loading="lazy" alt="Flash de cobra a cores">
+        <figcaption class="legenda">Flash</figcaption></figure>
+
+      <figure class="foto foto--cor galeria__item" data-cat="black" tabindex="0" role="button" aria-label="Abrir trabalho tradicional">
+        <img src="assets/galeria/work/g07.jpg" width="1440" height="1920" loading="lazy" alt="Coração sagrado em blackwork">
+        <figcaption class="legenda">Tradicional · coração</figcaption></figure>
+
+      <figure class="foto foto--cor galeria__item" data-cat="flash" tabindex="0" role="button" aria-label="Abrir folha de flash">
+        <img src="assets/galeria/work/g08.jpg" width="2480" height="1753" loading="lazy" alt="Folha de flash com águia e rosas">
+        <figcaption class="legenda">Flash autoral</figcaption></figure>
+
+      <figure class="foto foto--cor galeria__item" data-cat="black" tabindex="0" role="button" aria-label="Abrir trabalho blackwork">
+        <img src="assets/galeria/work/g09.jpg" width="1440" height="1920" loading="lazy" alt="Cobra em blackwork no braço">
+        <figcaption class="legenda">Blackwork · cobra</figcaption></figure>
+
+      <figure class="foto foto--cor galeria__item" data-cat="cor"   tabindex="0" role="button" aria-label="Abrir trabalho neo-tradicional">
+        <img src="assets/galeria/work/g10.jpg" width="1440" height="1920" loading="lazy" alt="Braço a cores, neo-tradicional">
+        <figcaption class="legenda">Neo-tradicional · braço</figcaption></figure>
+
+      <figure class="foto foto--cor galeria__item" data-cat="flash" tabindex="0" role="button" aria-label="Abrir folha de flash">
+        <img src="assets/galeria/work/g11.jpg" width="1440" height="1440" loading="lazy" alt="Flash de cobra sobre fundo teal">
+        <figcaption class="legenda">Flash</figcaption></figure>
+
+      <figure class="foto foto--cor galeria__item" data-cat="black" tabindex="0" role="button" aria-label="Abrir trabalho blackwork">
+        <img src="assets/galeria/work/g12.jpg" width="1440" height="1920" loading="lazy" alt="Animal em blackwork com botânica">
+        <figcaption class="legenda">Blackwork</figcaption></figure>
+    </div>
+  </div>
+
+  <!-- Visualizador em tela cheia -->
+  <div class="galeria__lightbox" id="galeria-lb" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Trabalho ampliado">
+    <button class="galeria__lb-fechar" type="button" aria-label="Fechar">&times;</button>
+    <button class="galeria__lb-nav galeria__lb-ant" type="button" aria-label="Anterior">&#8249;</button>
+    <figure class="galeria__lb-fig">
+      <img id="galeria-lb-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="1050" height="1400" alt="">
+      <figcaption id="galeria-lb-cap" class="legenda"></figcaption>
+    </figure>
+    <button class="galeria__lb-nav galeria__lb-prox" type="button" aria-label="Próximo">&#8250;</button>
+  </div>
+</section>

@@ -1,0 +1,98 @@
+/* ============================================================
+   microinfo.css — faixa fina de disponibilidade
+   Só tokens de tokens.css. Escopo: .microinfo
+   ============================================================ */
+.microinfo {
+  background: var(--cor-tinta);
+  color: var(--cor-creme);
+  --cor-texto: var(--cor-creme);
+  --cor-texto-2: rgba(239,230,214,0.82);
+  --cor-texto-3: rgba(239,230,214,0.62);
+  --cor-linha: rgba(239,230,214,0.18);
+  --cor-linha-forte: rgba(239,230,214,0.34);
+  /* faixa fina: não é bloco gigante — padding vertical curto */
+  padding-block: clamp(14px, 2.2vw, 22px);
+  border-top: 1px solid var(--cor-linha);
+  border-bottom: 1px solid var(--cor-linha);
+}
+.microinfo__container { position: relative; }
+
+.microinfo__faixa {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(0.8rem, 1.6vw, 1.6rem);
+}
+.microinfo__item { display: inline-flex; align-items: center; }
+.microinfo__item--fim { margin-left: auto; }
+
+/* separador: um fio curto vertical entre os itens */
+.microinfo__sep {
+  display: inline-block;
+  width: 1px;
+  height: 0.95em;
+  background: var(--cor-linha-forte);
+}
+
+.microinfo__ig:hover { color: var(--cor-acento-claro); }
+
+/* o traço que escorre do hero e atravessa como sublinhado */
+.microinfo__traco {
+  position: absolute;
+  left: var(--gutter);
+  right: var(--gutter);
+  width: calc(100% - 2 * var(--gutter));
+  max-width: calc(100% - 2 * var(--gutter));
+  bottom: calc(var(--esp-1) * -1);
+  height: 12px;
+  opacity: 0.9;
+}
+.microinfo__traco path {
+  stroke: var(--cor-acento);
+  stroke-width: var(--cena-espessura);
+  stroke-linecap: round;
+  /* estado inicial: não desenhado; a cena preenche ao rolar */
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+}
+
+/* entradas laterais escalonadas (JS adiciona .is-dentro; sem JS fica visível) */
+@media (prefers-reduced-motion: no-preference) {
+  .microinfo .aparece .microinfo__item {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+  .microinfo .aparece.is-dentro .microinfo__item {
+    opacity: 1;
+    transform: none;
+    transition: opacity var(--dur-media) var(--ease-saida),
+                transform var(--dur-media) var(--ease-saida);
+  }
+  .microinfo .aparece.is-dentro .microinfo__item:nth-child(1) { transition-delay: 0.00s; }
+  .microinfo .aparece.is-dentro .microinfo__item:nth-child(3) { transition-delay: 0.06s; }
+  .microinfo .aparece.is-dentro .microinfo__item:nth-child(5) { transition-delay: 0.12s; }
+  .microinfo .aparece.is-dentro .microinfo__item:nth-child(7) { transition-delay: 0.18s; }
+}
+
+/* sem JS: traço pronto e itens visíveis */
+.no-js .microinfo__traco path { stroke-dashoffset: 0; }
+.no-js .microinfo .aparece .microinfo__item { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .microinfo__traco path { stroke-dashoffset: 0; }
+}
+
+/* telemóvel: faixa não espremida — quebra em duas linhas, sem separador solto */
+@media (max-width: 560px) {
+  .microinfo__faixa { gap: 0.55rem 1rem; }
+  .microinfo__item--fim { margin-left: 0; }
+  .microinfo__sep { display: none; }
+}
+
+@media print {
+  .microinfo__traco { display: none; }
+  .microinfo { border-color: #ccc; }
+}

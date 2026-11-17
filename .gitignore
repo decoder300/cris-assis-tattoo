@@ -1,0 +1,3 @@
+.site-agent/
+node_modules/
+*.tmp.jpg
